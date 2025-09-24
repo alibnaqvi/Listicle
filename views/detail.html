@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boss Details</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <ul>
+          <li><a href="/" class="contrast">← Back</a></li>
+        </ul>
+      </nav>
+      <h1 id="detail-title">Loading...</h1>
+    </header>
+
+    <main class="container">
+      <article id="detail-content" class="detail"></article>
+    </main>
+
+    <footer class="container">
+      <small>Boss Compendium</small>
+    </footer>
+
+    <script>
+      async function loadDetail() {
+        const parts = window.location.pathname.split('/');
+        const id = parts[parts.length - 1];
+        try {
+          const res = await fetch(`/api/items/${id}`);
+          if (!res.ok) throw new Error('Not found');
+          const item = await res.json();
+
+          document.title = `${item.name} • Boss Details`;
+          document.getElementById('detail-title').textContent = item.name;
+
+          const article = document.getElementById('detail-content');
+          article.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" class="hero" />
+            <div class="grid">
+              <div>
+                <h3>Overview</h3>
+                <p>${item.description}</p>
+              </div>
+              <div>
+                <h3>Stats</h3>
+                <ul>
+                  <li><strong>Category:</strong> ${item.category}</li>
+                  <li><strong>Location:</strong> ${item.location}</li>
+                  <li><strong>Difficulty:</strong> ${item.difficulty}</li>
+                  <li><strong>Hit Points:</strong> ${item.hitPoints}</li>
+                </ul>
+              </div>
+            </div>
+            <h3>Attack Types</h3>
+            <ul>
+              ${item.attackTypes.map((a) => `<li>${a}</li>`).join('')}
+            </ul>
+            <h3>Loot</h3>
+            <ul>
+              ${item.loot.map((l) => `<li>${l}</li>`).join('')}
+            </ul>
+          `;
+        } catch (err) {
+          window.location.href = '/404';
+        }
+      }
+
+      loadDetail();
+    </script>
+  </body>
+  </html>
+
+

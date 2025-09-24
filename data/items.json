@@ -1,0 +1,63 @@
+[
+  {
+    "id": "crystalguardian",
+    "name": "Crystal Guardian",
+    "description": "A shimmering sentinel formed of living crystal, guarding ancient caverns.",
+    "category": "Fantasy Boss",
+    "location": "Azure Caverns",
+    "difficulty": "Hard",
+    "image": "https://picsum.photos/seed/crystalguardian/800/500",
+    "hitPoints": 4200,
+    "attackTypes": ["Crystal Shard Volley", "Prismatic Beam", "Shatterquake"],
+    "loot": ["Prismatic Core", "Shardplate", "Glimmer Dust"]
+  },
+  {
+    "id": "mantislords",
+    "name": "Mantis Lords",
+    "description": "Twin rulers who test challengers with elegant yet lethal precision.",
+    "category": "Fantasy Boss",
+    "location": "Verdant Spire",
+    "difficulty": "Medium",
+    "image": "https://picsum.photos/seed/mantislords/800/500",
+    "hitPoints": 2800,
+    "attackTypes": ["Blade Dance", "Silken Dart", "Echo Slash"],
+    "loot": ["Silksong", "Mantid Crest", "Windlace"]
+  },
+  {
+    "id": "emberwyrm",
+    "name": "Emberwyrm",
+    "description": "An ancient fire-drake that smolders beneath volcanic glass.",
+    "category": "Fantasy Boss",
+    "location": "Obsidian Hollow",
+    "difficulty": "Very Hard",
+    "image": "https://picsum.photos/seed/emberwyrm/800/500",
+    "hitPoints": 6000,
+    "attackTypes": ["Lava Breath", "Cinder Storm", "Molten Dive"],
+    "loot": ["Dragon Ember", "Scorched Scale", "Charred Crown"]
+  },
+  {
+    "id": "tidecaller",
+    "name": "Tidecaller Siren",
+    "description": "A song-bound queen who bends the tides and sailors' wills.",
+    "category": "Fantasy Boss",
+    "location": "Moonlit Shoals",
+    "difficulty": "Medium",
+    "image": "https://picsum.photos/seed/tidecaller/800/500",
+    "hitPoints": 3100,
+    "attackTypes": ["Drowning Hymn", "Riptide Pull", "Coral Spear"],
+    "loot": ["Pearl Diadem", "Siren's Tear", "Seafoam Cloak"]
+  },
+  {
+    "id": "ironcolossus",
+    "name": "Iron Colossus",
+    "description": "A towering construct powered by a heart of thunder.",
+    "category": "Fantasy Boss",
+    "location": "Stormfoundry",
+    "difficulty": "Hard",
+    "image": "https://picsum.photos/seed/ironcolossus/800/500",
+    "hitPoints": 5000,
+    "attackTypes": ["Thunder Hammer", "Arc Lash", "Aegis Slam"],
+    "loot": ["Storm Core", "Runed Greaves", "Forge Key"]
+  }
+]
+
