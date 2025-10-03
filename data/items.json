@@ -8,8 +8,16 @@
     "difficulty": "Hard",
     "image": "https://picsum.photos/seed/crystalguardian/800/500",
     "hitPoints": 4200,
-    "attackTypes": ["Crystal Shard Volley", "Prismatic Beam", "Shatterquake"],
-    "loot": ["Prismatic Core", "Shardplate", "Glimmer Dust"]
+    "attackTypes": [
+      "Crystal Shard Volley",
+      "Prismatic Beam",
+      "Shatterquake"
+    ],
+    "loot": [
+      "Prismatic Core",
+      "Shardplate",
+      "Glimmer Dust"
+    ]
   },
   {
     "id": "mantislords",
@@ -20,8 +28,16 @@
     "difficulty": "Medium",
     "image": "https://picsum.photos/seed/mantislords/800/500",
     "hitPoints": 2800,
-    "attackTypes": ["Blade Dance", "Silken Dart", "Echo Slash"],
-    "loot": ["Silksong", "Mantid Crest", "Windlace"]
+    "attackTypes": [
+      "Blade Dance",
+      "Silken Dart",
+      "Echo Slash"
+    ],
+    "loot": [
+      "Silksong",
+      "Mantid Crest",
+      "Windlace"
+    ]
   },
   {
     "id": "emberwyrm",
@@ -32,8 +48,16 @@
     "difficulty": "Very Hard",
     "image": "https://picsum.photos/seed/emberwyrm/800/500",
     "hitPoints": 6000,
-    "attackTypes": ["Lava Breath", "Cinder Storm", "Molten Dive"],
-    "loot": ["Dragon Ember", "Scorched Scale", "Charred Crown"]
+    "attackTypes": [
+      "Lava Breath",
+      "Cinder Storm",
+      "Molten Dive"
+    ],
+    "loot": [
+      "Dragon Ember",
+      "Scorched Scale",
+      "Charred Crown"
+    ]
   },
   {
     "id": "tidecaller",
@@ -44,8 +68,16 @@
     "difficulty": "Medium",
     "image": "https://picsum.photos/seed/tidecaller/800/500",
     "hitPoints": 3100,
-    "attackTypes": ["Drowning Hymn", "Riptide Pull", "Coral Spear"],
-    "loot": ["Pearl Diadem", "Siren's Tear", "Seafoam Cloak"]
+    "attackTypes": [
+      "Drowning Hymn",
+      "Riptide Pull",
+      "Coral Spear"
+    ],
+    "loot": [
+      "Pearl Diadem",
+      "Siren's Tear",
+      "Seafoam Cloak"
+    ]
   },
   {
     "id": "ironcolossus",
@@ -56,8 +88,16 @@
     "difficulty": "Hard",
     "image": "https://picsum.photos/seed/ironcolossus/800/500",
     "hitPoints": 5000,
-    "attackTypes": ["Thunder Hammer", "Arc Lash", "Aegis Slam"],
-    "loot": ["Storm Core", "Runed Greaves", "Forge Key"]
+    "attackTypes": [
+      "Thunder Hammer",
+      "Arc Lash",
+      "Aegis Slam"
+    ],
+    "loot": [
+      "Storm Core",
+      "Runed Greaves",
+      "Forge Key"
+    ]
   }
 ]
 

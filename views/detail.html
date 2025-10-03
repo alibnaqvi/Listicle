@@ -1,44 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Boss Details</title>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-  </head>
-  <body>
-    <header class="container">
-      <nav>
+    <link href="https://unpkg.com/@picocss/pico@2.0.6/css/pico.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<header class="container">
+    <nav>
         <ul>
-          <li><a href="/" class="contrast">← Back</a></li>
+            <li><a class="contrast" href="/">← Back</a></li>
         </ul>
-      </nav>
-      <h1 id="detail-title">Loading...</h1>
-    </header>
+    </nav>
+    <h1 id="detail-title">Loading...</h1>
+</header>
 
-    <main class="container">
-      <article id="detail-content" class="detail"></article>
-    </main>
+<main class="container">
+    <article class="detail" id="detail-content"></article>
+</main>
 
-    <footer class="container">
-      <small>Boss Compendium</small>
-    </footer>
+<footer class="container">
+    <small>Boss Compendium</small>
+</footer>
 
-    <script>
-      async function loadDetail() {
+<script>
+    async function loadDetail() {
         const parts = window.location.pathname.split('/');
         const id = parts[parts.length - 1];
         try {
-          const res = await fetch(`/api/items/${id}`);
-          if (!res.ok) throw new Error('Not found');
-          const item = await res.json();
+            const res = await fetch(`/api/items/${id}`);
+            if (!res.ok) throw new Error('Not found');
+            const item = await res.json();
 
-          document.title = `${item.name} • Boss Details`;
-          document.getElementById('detail-title').textContent = item.name;
+            document.title = `${item.name} • Boss Details`;
+            document.getElementById('detail-title').textContent = item.name;
 
-          const article = document.getElementById('detail-content');
-          article.innerHTML = `
+            const article = document.getElementById('detail-content');
+            article.innerHTML = `
             <img src="${item.image}" alt="${item.name}" class="hero" />
             <div class="grid">
               <div>
@@ -65,13 +65,13 @@
             </ul>
           `;
         } catch (err) {
-          window.location.href = '/404';
+            window.location.href = '/404';
         }
-      }
+    }
 
-      loadDetail();
-    </script>
-  </body>
-  </html>
+    loadDetail();
+</script>
+</body>
+</html>
 
 

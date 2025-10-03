@@ -1,11 +1,11 @@
 async function loadCards() {
-  const grid = document.getElementById('cards');
-  try {
-    const res = await fetch('/api/items');
-    const items = await res.json();
-    grid.innerHTML = items
-      .map((item) => {
-        return `
+    const grid = document.getElementById('cards');
+    try {
+        const res = await fetch('/api/items');
+        const items = await res.json();
+        grid.innerHTML = items
+            .map((item) => {
+                return `
         <article class="card">
           <a href="/bosses/${item.id}" aria-label="View details for ${item.name}">
             <img src="${item.image}" alt="${item.name}" />
@@ -18,11 +18,11 @@ async function loadCards() {
           </a>
         </article>
         `;
-      })
-      .join('');
-  } catch (err) {
-    grid.innerHTML = '<p>Failed to load items.</p>';
-  }
+            })
+            .join('');
+    } catch (err) {
+        grid.innerHTML = '<p>Failed to load items.</p>';
+    }
 }
 
 document.addEventListener('DOMContentLoaded', loadCards);

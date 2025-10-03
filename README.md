@@ -1,10 +1,10 @@
-# WEB103 Project 1 - *Listicle Pt. 1*
+# WEB103 Project 2 - *Listicle Part 2*
 
 Submitted by: **Ali Naqvi**
 
-About this web app: **A list-based web app that displays contents about heroes.**
+About this web app: **List-based web app but refactored to serve data from a database instead.**
 
-Time spent: **2** hours
+Time spent: **1** hour
 
 ## Required Features
 
@@ -12,23 +12,19 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 - [*] **The web app uses only HTML, CSS, and JavaScript without a frontend framework**
-- [*] **The web app displays a title**
-- [*] **The web app displays at least five unique list items, each with at least three displayed attributes (such as title, text, and image)**
-- [*] **The user can click on each item in the list to see a detailed view of it, including all database fields**
-  - [*] **Each detail view should be a unique endpoint, such as as `localhost:3000/bosses/crystalguardian` and `localhost:3000/mantislords`**
-  - [*] *Note: When showing this feature in the video walkthrough, please show the unique URL for each detailed view. We will not be able to give points if we cannot see the implementation* 
-- [*] **The web app serves an appropriate 404 page when no matching route is defined**
-- [*] **The web app is styled using Picocss**
+- [*] **The web app is connected to a PostgreSQL database, with an appropriately structured database table for the list items**
+    - [*] **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
+    - [*]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 
 The following **optional** features are implemented:
 
-- [*] The web app displays items in a unique format, such as cards rather than lists or animated list items
+- [ ] The user can search for items by a specific attribute
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://i.imgur.com/DgcniQl.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/3ulxpUN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Kap
